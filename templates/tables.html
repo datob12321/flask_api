@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+
+{% block title %}Table{% endblock %}
+
+{% block content %}
+    <h1>table</h1>
+    <h1>Show all students</h1>
+    {% for student in student_info %}
+        <h1>{{ student.student_id }}, {{ student.student_name }},
+            {{ student.student_last_name }}</h1>
+
+    {% endfor %}
+{% endblock %}
